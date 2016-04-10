@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">InstaChat</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">Login</string>
+    <string name="usernameHint">UserName</string>
+    <string name="passwordHint">Password</string>
+    <string name="title_activity_sign_up">SignUp</string>
+    <string name="EmailHint">Email</string>
+    <string name="Signup">SignUp !</string>
+    <string name="signUp">Sign Up</string>
+    <string name="signup_error_message">One or more field is empty</string>
+    <string name="signup_error_title">Error Message</string>
+    <string name="login_error_message">One or more field is empty</string>
+    <string name="login_error_title">Error Message</string>
+    <string name="logout_label">Logout</string>
+    <string name="reset_option">Reset</string>
+    <string name="signup_option">Signup</string>
+    <string name="title_activity_user">userActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="empty_inbox_label">NO NEW MESSAGES !</string>
+    <string name="friends_label">Add Friends to begin </string>
+    <string name="Edit_friends">Edit Freinds</string>
+    <string name="title_activity_edit__friends">Edit Friends</string>
+    <string name="error_title">We\'re Sorry</string>
+    <string name="action_camera_label">action_camera</string>
+    <string name="general_error">Error !!!</string>
+    <string name="video_size_warning">Video Size must be less than 10 MB</string>
+    <string name="error_opening_file">There was an error with the given file</string>
+    <string-array name="camera_choices">
+        <item>Take Picture</item>
+        <item>Take Video</item>
+        <item>Choose Picture</item>
+        <item>Choose Video</item>
+    </string-array>
+    <string name="title_activity_recipient">ChooseRecipient</string>
+    <string name="title_activity_image_view">InstaShare</string>
+</resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="project.instachat.com.InstaShare">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="project.instachat.com.InstaShare.InstaChatApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="project.instachat.com.InstaShare.userActivity"
+            android:configChanges="orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="project.instachat.com.InstaShare.Login"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="project.instachat.com.InstaShare.SignUp"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_sign_up"
+            android:parentActivityName="project.instachat.com.InstaShare.Login"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="project.instachat.com.InstaShare.MainActivity"
+            android:label="@string/title_activity_user"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="project.instachat.com.InstaShare.Edit_Friends"
+            android:label="@string/title_activity_edit__friends"
+            android:parentActivityName="project.instachat.com.InstaShare.userActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="project.instachat.com.InstaShare.userActivity" />
+        </activity>
+        <activity
+            android:name="project.instachat.com.InstaShare.RecipientActivity"
+            android:label="@string/title_activity_recipient"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="project.instachat.com.InstaShare.userActivity" />
+        </activity>
+        <activity
+            android:name="project.instachat.com.InstaShare.ViewImage"
+            android:label="@string/title_activity_image_view"
+            android:parentActivityName="project.instachat.com.InstaShare.userActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="project.instachat.com.InstaShare.userActivity" />
+        </activity>
+    </application>
+
+</manifest>

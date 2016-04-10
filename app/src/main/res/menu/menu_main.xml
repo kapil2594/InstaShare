@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="project.instachat.com.InstaShare.MainActivity"
+
+    >
+    <item
+        android:id="@+id/Logout"
+        android:orderInCategory="100"
+        android:title="@string/logout_label"
+        app:showAsAction="never" />
+</menu>
